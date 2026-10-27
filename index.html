@@ -2,10 +2,120 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Mi Primera Página HTML</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fórmula 1 - Pasión por la Velocidad</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #15151e;
+            color: #ffffff;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            border-bottom: 3px solid #e10600;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        h1 {
+            color: #e10600;
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+        section {
+            background-color: #1f1f27;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+        h2 {
+            border-left: 4px solid #e10600;
+            padding-left: 10px;
+            margin-top: 0;
+        }
+        audio, video, iframe {
+            width: 100%;
+            border-radius: 6px;
+        }
+        iframe {
+            height: 400px;
+            border: 0;
+        }
+        figure {
+            margin: 0;
+            text-align: center;
+        }
+        figure img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+        }
+        figcaption {
+            margin-top: 10px;
+            font-style: italic;
+            color: #aaaaaa;
+        }
+    </style>
 </head>
 <body>
-    <h1>¡Hola Mundo!</h1>
-    <p>Este es un párrafo en mi primera página HTML.</p>
+
+    <header>
+        <h1>Fórmula 1: El Gran Circo</h1>
+        <p>Experiencia multimedia sobre la categoría reina del automovilismo</p>
+    </header>
+
+    <div class="container">
+
+        <!-- 1. Sección de Audio -->
+        <section>
+            <h2>Sonido de Motor V10 F1</h2>
+            <p>Escucha el rugido clásico de un monoplaza de Fórmula 1:</p>
+            <audio controls>
+                <source src="https://www.soundjay.com/transportation/race-car-drive-by-1.mp3" type="audio/mpeg">
+                Tu navegador no soporta el elemento de audio HTML5.
+            </audio>
+        </section>
+
+        <!-- 2. Sección de Vídeo -->
+        <section>
+            <h2>Acción en Pista</h2>
+            <p>Disfruta del espectáculo y la velocidad en carrera:</p>
+            <video controls poster="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&w=800&q=80">
+                <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de vídeos HTML5.
+            </video>
+        </section>
+
+        <!-- 3. Sección de Iframe (Mapa interactivo del Circuito de Mónaco) -->
+        <section>
+            <h2>Circuito de Montecarlo (Mónaco)</h2>
+            <p>Ubicación geográfica del trazado más emblemático del calendario:</p>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11531.026403077363!2d7.414618769324672!3d43.734791333792015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cdc28f6916c391%3A0x8670c564c7ea45c1!2sCircuito%20de%20M%C3%B3naco!5e0!3m2!1ses!2ses!4v1700000000000!5m2!1ses!2ses" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
+
+        <!-- 4. Sección Figure (Imagen con descripción) -->
+        <section>
+            <h2>Monoplaza de Fórmula 1</h2>
+            <figure>
+                <img src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&w=1000&q=80" alt="Monoplaza de Fórmula 1 compitiendo en circuito">
+                <figcaption>Figura 1: Monoplaza de F1 afinado aerodinámicamente para maximizar la carga y la velocidad en paso por curva.</figcaption>
+            </figure>
+        </section>
+
+    </div>
+
 </body>
 </html>
